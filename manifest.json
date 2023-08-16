@@ -1,63 +1,69 @@
 {
-    "author": "charlessoft",
-    "copyright": "foxit",
-    "description": "Discover Sample tool",
-    "icons": "",
-    "id": "DiscoverSample",
-    "manifest_version": 1,
-    "name": "Discover Sample Tool",
-    "command_url": "http://localhost:8080/home",
-    "panel": {
-        "icon": "https://s1.ax1x.com/2023/08/15/pPQi73q.png",
+  "author": "charlessoft",
+  "copyright": "foxit",
+  "description": "Discover Sample tool",
+  "icons": "",
+  "id": "DiscoverSample",
+  "manifest_version": 1,
+  "name": "Discover Sample Tool",
+  "command_url": "https://7gx3vp-8080.csb.app/#/home",
+  "panel": {
+    "icon": "https://s1.ax1x.com/2023/08/15/pPQi73q.png",
+    "title": "Discover Sample",
+    "tooltip": "Discover Sample",
+    "url": "https://7gx3vp-8080.csb.app/#/home"
+  },
+  "ribbon": {
+    "tabs": [
+      {
+        "id": "discover",
         "title": "Discover Sample",
-        "tooltip": "Discover Sample",
-        "url": "http://localhost:8080/home"
+        "groups": [
+          {
+            "id": "docgroup",
+            "label": "Doc Group",
+            "controls": [
+              {
+                "id": "doccontrol1",
+                "title": "Doc Button",
+                "enable": true,
+                "icon": "https://s1.ax1x.com/2023/08/15/pPQi73q.png",
+                "tooltip": "Im test control",
+                "type": "Button",
+                "action": {
+                  "type": "ExecuteFunction",
+                  "functionname": "test"
+                }
+              },
+              {
+                "id": "doccontrol2",
+                "title": "Doc 2",
+                "enable": true,
+                "icon": "https://s1.ax1x.com/2023/08/15/pPQi73q.png",
+                "tooltip": "Im test control",
+                "type": "Button",
+                "action": {
+                  "type": "ShowTaskpanel",
+                  "title": "TestsPanel",
+                  "url": "http://localhost:10001/testPlugin/panel/index.html"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "signcode": "",
+  "version": "1.0.0",
+  "resources": {
+    "en-US": {
+      "name": "Doc Sample",
+      "desc": "Doc Sample"
     },
-    "ribbon": {
-        "tabs": [{
-            "id": "discover",
-            "title": "Discover Sample",
-            "groups": [{
-                "id": "docgroup",
-                "label": "Doc Group",
-                "controls": [{
-                    "id": "doccontrol1",
-                    "title": "Doc Button",
-                    "enable": true,
-                    "icon": "https://s1.ax1x.com/2023/08/15/pPQi73q.png",
-                    "tooltip": "Im test control",
-                    "type": "Button",
-                    "action": {
-                        "type": "ExecuteFunction",
-                        "functionname": "test"
-                    }
-                },
-                    {
-                        "id": "doccontrol2",
-                        "title": "Doc 2",
-                        "enable": true,
-                        "icon": "https://s1.ax1x.com/2023/08/15/pPQi73q.png",
-                        "tooltip": "Im test control",
-                        "type": "Button",
-                        "action": {
-                            "type": "ShowTaskpanel",
-                            "title": "TestsPanel",
-                            "url": "http://localhost:10001/testPlugin/panel/index.html"
-                        }
-                    }]
-            }]
-        }]
-    },
-    "signcode": "",
-    "version": "1.0.0",
-    "resources": {
-        "en-US": {
-            "name": "Doc Sample",
-            "desc": "Doc Sample"
-        },
-        "zh-CN": {
-            "name": "文档Sample",
-            "desc": "文档Sample"
-        }
+    "zh-CN": {
+      "name": "文档Sample",
+      "desc": "文档Sample"
     }
+  }
 }
